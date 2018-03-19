@@ -82,7 +82,6 @@ public class CalcTest {
 
     }
 
-    @Ignore("Implement the code to pass it.")
     @Test
     public void shouldNotAcceptAnyKeystrokeAfterOverflow(){
 

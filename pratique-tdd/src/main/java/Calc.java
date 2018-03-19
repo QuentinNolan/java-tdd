@@ -10,6 +10,8 @@ public class Calc {
     }
 
     public void press(char keyStroke) {
+        if(display.equals("E")) return;
+
         if(keyStroke == '+' || keyStroke == '-' ) {
             operation = keyStroke;
             firstNumber = display;
