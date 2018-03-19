@@ -28,7 +28,7 @@ public class Calc {
 
                 if (operation == '+') {
                     display = "" + (Integer.parseInt(firstNumber) + Integer.parseInt(operationNumber));
-                } else if (keyStroke == '-') {
+                } else if (operation == '-') {
                     display = "" + (Integer.parseInt(firstNumber) - Integer.parseInt(operationNumber));
                 }
 

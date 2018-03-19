@@ -124,7 +124,6 @@ public class CalcTest {
 
     }
 
-    @Ignore("Implement the code to pass it.")
     @Test
     public void shouldSubtract() {
 
@@ -136,7 +135,6 @@ public class CalcTest {
 
     }
 
-    @Ignore("Implement the code to pass it.")
     @Test
     public void shouldKeepOnSubtract() {
 
