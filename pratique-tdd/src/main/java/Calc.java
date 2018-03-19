@@ -2,6 +2,7 @@ public class Calc {
 
     String display;
     String firstNumber;
+    String operationNumber;
     char operation;
     boolean newNumber;
 
@@ -18,12 +19,21 @@ public class Calc {
                 operation = keyStroke;
                 firstNumber = display;
                 newNumber = true;
+                operationNumber = "";
             } else if (keyStroke == '=') {
-                if (operation == '+') {
-                    display = "" + (Integer.parseInt(firstNumber) + Integer.parseInt(display));
-                } else if (keyStroke == '-') {
-                    display = "" + (Integer.parseInt(firstNumber) - Integer.parseInt(display));
+                //String newFirstNumber = display;
+                if(operationNumber.length() == 0) {
+                    operationNumber = display;
                 }
+
+                if (operation == '+') {
+                    display = "" + (Integer.parseInt(firstNumber) + Integer.parseInt(operationNumber));
+                } else if (keyStroke == '-') {
+                    display = "" + (Integer.parseInt(firstNumber) - Integer.parseInt(operationNumber));
+                }
+
+                firstNumber = display;
+
                 if (display.length() >= 9) {
                     display = "E";
                 }
