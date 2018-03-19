@@ -60,19 +60,17 @@ public class CalcTest {
 
     }
 
-    @Ignore("Implement the code to pass it.")
     @Test
     public void shouldSumTwoPositiveNumbers(){
 
         Calc calc = new Calc();
-        assertDisplayAfterKeyStrokes("1", calc, '2');
-        assertDisplayAfterKeyStrokes("1", calc, '+');
+        assertDisplayAfterKeyStrokes("2", calc, '2');
+        assertDisplayAfterKeyStrokes("2", calc, '+');
         assertDisplayAfterKeyStrokes("3", calc, '3');
         assertDisplayAfterKeyStrokes("5", calc, '=');
 
     }
 
-    @Ignore("Implement the code to pass it.")
     @Test
     public void shouldOverflowIfTheResultIsToBigToFitTheDisplay(){
 
